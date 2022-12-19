@@ -1,0 +1,290 @@
+@font-face {
+	font-family: "PT Mono"; 
+	src: url(/static/fonts/PTMono-Regular.ttf); 
+}
+
+.SetD {
+    position: absolute; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    opacity: 0.8;
+    transition: all 0.1s;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	background: rgb(184 246 255);
+	border: 6px solid #798aff;
+}
+
+td {
+	font-size: 0;
+	text-align: center;
+	border: 1px solid rgb(113, 168, 227);
+    background-color: rgb(184 246 255);
+    width: 40px; 
+    height: 40px; 
+    min-width: 40px; 
+    min-height: 40px;
+    position: relative; 
+    padding: 0;
+	
+}
+
+body {
+	background-color: black;
+	color: white;
+    font-family: "PT Mono";
+	
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	background-color: #000000;
+	min-width: 1320px;
+	height: 50px;
+}
+
+main {
+	padding: 60px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+	transition: none;
+	min-width: 1200px;
+}
+#genDiv { 
+    padding: 5px;
+    margin-top: 10px;
+    width: 400px;
+	height: 140px;
+	position: relative;
+	background-color: white;
+	border-radius: 20px;
+	border: 6px solid #798aff
+} 
+
+.hide {
+    display: none;
+}
+.backlight {
+   	background:  rgb(255, 72, 31);
+}
+.Notbacklight {
+   	background:  rgb(69, 140, 184);
+}
+
+
+.app-actions {
+    /* height: 100%; */
+	width: 284px;
+	text-align: center;
+	font-size: 20px;
+	font-family: "PT Mono";
+	
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: -0.025em;
+	margin-top: 17px;
+}
+
+.counter-Bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 25px;
+	color: black;
+}
+
+.counter-Sockets {
+	background: rgb(184 246 255);
+	width: 126px;
+	height: 100px;
+	border: 5px solid #2c3e50;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	border-radius: 20px;
+}
+.counter-Sockets > span {
+	font-size: 28px;
+}
+
+.app-action {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 210px;
+    padding: 10px;
+	font-family: "PT Mono";
+    margin: 10px;
+    border: 5px solid #798aff
+}
+
+.app-body{
+	align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.shot {
+	background:  rgb(255, 226, 172);
+}
+
+.btn {
+	
+	font-size: inherit;
+	color: inherit;
+    background: none;
+	cursor: pointer;
+	
+	/* display: inline-block; */
+	
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+	outline: none;
+	position: relative;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+    
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+
+
+/* Button 1 */
+.btn-1 {
+	background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.btn-1:hover {
+	background: #b8f2ff;
+}
+
+.btn-1:active {
+	background: #3eb2ff;
+	top: 2px;
+}
+
+.btn-1:before {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 3;
+	font-size: 140%;
+	width: 60px;
+}
+
+/* Button 2 */
+.btn-2 {
+	background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.btn-2:hover {
+	background: #afffcf;
+}
+
+.btn-2:active {
+	background: #9effc6;
+	top: 2px;
+}
+
+.btn-2:before {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 3;
+	font-size: 140%;
+	width: 60px;
+}
+
+/* Button 3 */
+.btn-3 {
+	background: #ffffff;
+	color: black;
+	border: 5px solid #f67466;
+}
+
+.btn-3:hover {
+	background: #ffb5ad;
+}
+
+.btn-3:active {
+	background: #c0392b;
+	top: 2px;
+}
+
+.btn-3:before {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 3;
+	font-size: 140%;
+	width: 60px;
+}
+
+/* Button 3 */
+.btn-4 {
+	background: #34495e;
+	color: #fff;
+}
+
+.btn-4:hover {
+	background: #2c3e50;
+}
+
+.btn-4:active {
+	background: #2c3e50;
+	top: 2px;
+}
+
+.btn-4:before {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 3;
+	font-size: 140%;
+	width: 60px;
+}
+
+.footer {
+	padding-top: 100px ;
+	height: 50px;
+	text-align: center;
+}

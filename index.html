@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/static/css.css">
+</head>
+<body>
+    <header><h1>SEA BATTLE</h1></header>
+    <main>
+        <div id = "table1" style = "padding: 20px;">
+            <div id = "tables" > 
+                
+            </div>
+
+            <div id = "genDiv">
+                    
+            </div>
+        </div>
+    
+        <div class="app-body">
+            <div class="app-menu">
+                <div class="app-actions btn" data-scene="preparation">
+                    <button id = "play" type = "submit" class="app-action btn btn-2 hide" data-type="random" >
+                        Play with random people
+                    </button>
+                    <button class="app-action btn btn-1"  data-type="challenge">
+                        Go battle
+                    </button>
+                    <button class="app-action btn btn-1" data-action="manually">
+                        I do it myself
+                    </button>
+                    <button class="app-action btn btn-1" data-action="randomize">
+                        Okay, random
+                    </button>
+                </div>
+
+                <div class="app-actions hide" data-scene="online">
+                    <div class = "battlefield-status"></div>
+                </div>
+                <div class="app-actions hide" data-scene="bar">
+                    <div class="counter-Bar">
+                        <div class="counter-Sockets">
+                            <p>Счет    игрока</p>
+                            <span class = "numPl">0</span>
+                        </div>
+                        <div class="counter-Sockets">
+                            <p>Счет соперника</p>
+                            <span class = "numEn">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-actions btn hide" data-scene="exit">
+                    <button class="app-action btn btn-3" data-action="ex">Exit</button>
+                </div>
+
+            </div>
+            <div id="console">
+                <p style="text-align: center" >Игроков онлайн: <span class = "amountPlayer">0</span></p>
+                <div id = "PlayerJOIN" class = "hide" style="font-size: 14px;"></div>
+            </div>
+        </div>
+
+        <div style = "padding: 20px;" id = "table2">
+            <div id = "tablesEnemy"> 
+                
+            </div>
+        </div>
+    </main>
+    <footer class="footer">© 2022. D0 Perfect Все права защищены</footer>
+
+    <!-- <div id="chat" ><ul id="messages"></ul></div>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form> -->
+
+    <script src = "/static/Game.js"></script>
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src = "/static/client.js"></script>
+    <script src = "/static/PartyManager.js"></script>
+    <script src = "/static/Party.js"></script>
+
+</body>
+</html>
